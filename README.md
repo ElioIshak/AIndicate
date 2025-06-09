@@ -72,9 +72,8 @@ A custom-built **Streamlit GUI** was developed to make the tool accessible via a
 ### The GUI includes:
 
 - A dropdown to select supported stocks and cryptocurrencies  
-- An "Analyze" button to trigger model inference  
+- A "Run Indicator" button to trigger model inference  
 - Display of:
-  - Selected asset name
   - Buy/Sell/Hold recommendation
   - Prediction direction (UP/DOWN)
   - Model confidence

@@ -19,7 +19,7 @@ It provides data-driven buy/sell/hold recommendations based on historical market
 - 🤖 AI-powered prediction engine using Random Forest  
 - 📺 Interactive GUI built with Streamlit  
 - 💰 Buy/Sell/Hold decision logic with confidence scoring  
-- 📉 Live price chart for the selected asset
+- 📉 price chart for the selected asset
 
 ---
 

@@ -87,7 +87,8 @@ A custom-built **Streamlit GUI** was developed to make the tool accessible via a
 
 ## 🚀 Live Demo
 
-*Coming soon*
+Try the app live:  
+👉 [Open App](https://aindicate.streamlit.app/)
 
 ---
 

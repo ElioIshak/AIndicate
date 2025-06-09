@@ -82,7 +82,6 @@ def run_ai_indicator(symbol):
         "accuracy": round(accuracy, 2),
         "prediction": "UP" if recent_day_prediction == 1 else "DOWN",
         "confidence": round(recent_day_confidence, 2),
-        "chart_data": pd.DataFrame(np.random.randn(20, 1), index=pd.date_range(end=pd.Timestamp.today(), periods=20),  columns=['Close'])
     }
     return result
 
@@ -107,7 +106,8 @@ if result:
     col3.metric("Accuracy", f"{result['accuracy']}", "")
     col4.metric("Confidence", f"{result['confidence']}", "")
 
-    st.line_chart(result['chart_data'])
+    data = yf.download(supported_stocks_symbols[supported_stocks_names.index(options)], period='30d', interval='1d')
+    st.line_chart(data['Close'])
 
 
 

@@ -85,7 +85,7 @@ A custom-built **Streamlit GUI** was developed to make the tool accessible via a
 
 ---
 
-## 🚀 (Optional) Live Demo
+## 🚀 Live Demo
 
 *Coming soon*
 
@@ -101,7 +101,7 @@ A custom-built **Streamlit GUI** was developed to make the tool accessible via a
 ## 📂 How to Run
 
 1. Install the requirements:
-    - pip install streamlit yfinance pandas numpy scikit-learn matplotlib pillow
+    - pip install -r requirements.txt
 2. Launch the program:
     - streamlit run AI_Stock_Indicator.py
     

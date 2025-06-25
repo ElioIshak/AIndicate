@@ -146,6 +146,18 @@ AIndicate supports a smart notification system that allows users to:
 
 ---
 
+# 🔒 Data Privacy & Notification Disclaimer
+
+1. All user submissions (email and selected assets) are stored securely and used for enabling AIndicate’s smart notification system.
+
+2. No user data is shared or exposed publicly.
+
+3. The notification system code is fully developed but not yet deployed to the cloud, meaning email alerts are currently inactive.
+
+4. Users can submit their preferences, and once cloud hosting is enabled, the notification system will go live.
+
+---
+
 ## 🚀 Live Demo
 
 Try the app live:  

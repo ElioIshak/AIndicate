@@ -1,0 +1,12 @@
+# 🔐 Secret credentials
+.env
+
+# 📊 Sensitive user data
+USERS_SUBMISSIONS.csv
+
+# ⚙️ Python cache and compiled files
+__pycache__/
+*.pyc
+
+# 🔧 Optional: Streamlit config or log files
+*.log

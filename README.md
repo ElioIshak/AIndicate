@@ -19,7 +19,7 @@ It provides data-driven buy/sell/hold recommendations based on historical market
 - 🤖 AI-powered prediction engine using Random Forest  
 - 📺 Interactive GUI built with Streamlit  
 - 💰 Buy/Sell/Hold decision logic with confidence scoring  
-- 📉 price chart for the selected asset
+- 📉 Price chart for the selected asset
 
 ---
 
@@ -51,7 +51,7 @@ This process helped me not only understand the theory behind ML models, but also
 
 2. **Feature Engineering**  
    - Daily return calculations  
-   - Rolling return windows (up to 30 days)  
+   - Rolling return windows (up to 60 days)  
    - Labeling whether the next day's return is positive (UP) or not (DOWN)
 
 3. **Model Training**  
@@ -62,6 +62,56 @@ This process helped me not only understand the theory behind ML models, but also
    - Predicts if tomorrow's price will go UP or DOWN  
    - If confidence ≥ 55%, suggests **Buy** or **Sell**  
    - Otherwise, it recommends **Hold**
+
+---
+
+## 📌 Features Used
+
+AIndicate uses a diverse set of engineered features that help the AI model identify price trends, momentum, and market volatility:
+
+1. Technical Indicators:
+
+- RSI (Relative Strength Index): 
+   **Measures recent price gains/losses to detect if an asset is overbought or oversold -> useful for spotting potential reversals.**
+
+- SMA (Simple Moving Averages ~ 10-day and 30-day):
+   **Smooth out price noise to capture overall trend direction.**
+
+- SMA Crossover Signal:
+   **Indicates bullish or bearish momentum when short-term and long-term SMAs cross —> widely used in trading strategies.**
+
+- MACD & MACD Signal Line:
+   **Capture momentum shifts by comparing short- and long-term EMAs —> helpful for detecting trend changes.**
+
+- Stochastic RSI:
+   **Increases the sensitivity of RSI by analyzing its own momentum —> highlights quick shifts in price strength.**
+
+- EMA (Exponential Moving Average):
+   **Averages price with more weight on recent data —> reacts faster to price movements than SMA.**
+
+- Bollinger Bands (Upper, Lower, Width):
+   **Measure volatility and potential price breakouts or pullbacks using dynamic price bands.**
+
+2. Price & Volatility Features:
+
+- Daily Return:
+   **Measures daily percentage change in price —> forms the core signal for trend direction.**
+
+- Volume:
+   **Reflects trading activity —> spikes in volume often confirm the strength of price movements.**
+
+- Open-to-Close Return (OC Return):
+   **Captures intraday sentiment by comparing the day’s open and close prices.**
+
+- Daily Range (High–Low / Close):
+   **Reflects the strength of daily price movement —> useful for detecting strong market activity.**
+
+- Rolling Standard Deviation (10-day):
+   **Tracks recent volatility levels —> helps detect unstable or uncertain market periods.**
+
+3. Lagged Historical Features (past 60 days):
+
+- For each of the above metrics, past 60 days of values are included to allow the model to detect temporal patterns and trends — just like a trader would analyze historical charts to make decisions.
 
 ---
 
@@ -84,6 +134,18 @@ A custom-built **Streamlit GUI** was developed to make the tool accessible via a
 
 ---
 
+## 🧠 Smart Notification System
+
+AIndicate supports a smart notification system that allows users to:
+
+- Select specific stocks or crypto assets.
+- Receive real-time alerts when the AI model generates strong Buy or Sell signals (with confidence ≥ 55%).
+- Get recommendations by email.
+
+> This feature aims to make the model's predictions actionable and user-centric.
+
+---
+
 ## 🚀 Live Demo
 
 Try the app live:  
@@ -93,8 +155,9 @@ Try the app live:
 
 ## 🚧 Upcoming Work
   
-- Support more timeframes
-- Support more stocks, coins, and markets
+- ✅ Hyperparameter tuning using RandomizedSearchCV to improve model performance and reliability
+- 🕒 Support multiple timeframes (e.g. intraday, weekly trends) for more flexible analysis
+- 🌍 Expand market coverage to include more global stocks, crypto assets, and financial instruments
 
 ---
 
@@ -110,6 +173,13 @@ Try the app live:
 ## 📬 Contact
 
 **Elio** – Computer Science student at AUB  
-If you’re a recruiter or mentor interested in my work, feel free to reach out via [LinkedIn](www.linkedin.com/in/elio-ishak-b702a0330) or GitHub.
+If you’re a recruiter or mentor interested in my work, feel free to reach out via [LinkedIn](https://www.linkedin.com/in/elio-ishak-b702a0330) or GitHub.
+
+---
+
+## ⚖️ License
+
+This project is licensed under the [MIT License](./LICENSE.txt).  
+You are free to use, modify, and share this code with attribution. See the LICENSE file for details.
 
 ---

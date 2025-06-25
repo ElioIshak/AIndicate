@@ -149,7 +149,7 @@ AIndicate supports a smart notification system that allows users to:
 ## 🚀 Live Demo
 
 Try the app live:  
-👉 [Open App](https://aindicate.streamlit.app/)
+👉 [Open App](https://aindicate-stocks-crypto-indicator.streamlit.app/)
 
 ---
 

@@ -179,7 +179,10 @@ If you’re a recruiter or mentor interested in my work, feel free to reach out 
 
 ## ⚖️ License
 
-This project is licensed under the [MIT License](./LICENSE.txt).  
-You are free to use, modify, and share this code with attribution. See the LICENSE file for details.
+This project is licensed under the **MIT License** © 2025 Elio Ishak.  
+You are free to use, modify, and extend this code **with proper attribution**.  
+However, redistribution or publication under your name without credit is **not permitted**.
+
+Please see the [LICENSE](./LICENSE) file for full legal terms.
 
 ---
